@@ -1,0 +1,475 @@
+body {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.nav_bar {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.nav_bar .main_tittlebar {
+  color: #ffff;
+  margin-left: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.menu_bar {
+  margin-right: 80px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.menu_bar .options {
+  display: inline;
+  opacity: 0.67;
+  margin-right: 20px;
+}
+.options a {
+  text-decoration: none;
+  color: #ffff;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.options a:hover {
+  color: #25ab75;
+  transform: scale(1.3);
+}
+.content {
+  display: flex;
+  color: #ffff;
+  margin-left: 50px;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.content .notification {
+  background: #191919;
+  align-items: center;
+  display: flex;
+  border-radius: 180px;
+  height: 40px;
+  margin-top: 40px;
+  width: 350px;
+}
+.notification .btn_small {
+  z-index: 1;
+  margin-left: 8px;
+}
+.text_notification {
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+}
+.main_tittlecontent {
+  font-weight: 700;
+  font-size: 150px;
+  letter-spacing: -2px;
+}
+.textcontent {
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.47;
+  letter-spacing: 0.67px;
+  line-height: 19px;
+  margin-left: 10px;
+}
+.area_buttons {
+  display: inline;
+  padding-top: 40px;
+}
+.btn {
+  color: #ffff;
+  border: none;
+  background: #191919;
+  width: 160px;
+  height: 55px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: inline;
+  transition: 0.3s;
+}
+.btn.btn_primary {
+  background: #25ab75;
+}
+.btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+}
+.btn.btn_small {
+  border-radius: 20px;
+  height: 28px;
+  width: 55px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+/*.btn.btn_primary:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #000;
+}
+.btn.btn_secundary {
+  transition: 0.3s;
+}
+.btn.btn_secundary:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  color: #000;
+} */
+
+/* .btn_get1 { */
+/* color: #ffff;
+  border: none;
+  background: #25ab75;
+  width: 160px;
+  height: 55px;
+  border-radius: 10px;
+  /* margin-top: 40px;     pois se definir especifico a ele, nao consigo reutilizar o btn*/
+/* font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;  movido para classa btn */
+/*  */
+.area_buttons .btn:nth-child(2) {
+  /* background: #191919;
+  color: #ffff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  width: 160px;
+  height: 55px;  colocou esse ntg de filho o secundo filho da ara dos buttosn entre os botoes*/
+  margin-left: 40px;
+}
+.activities {
+  position: absolute;
+  right: 100px;
+  top: 260px;
+  display: flex;
+  flex-direction: column;
+}
+.act_time {
+  width: 166px;
+  height: 98px;
+  background: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+  border-radius: 20px;
+}
+.act_time .time {
+  color: #ffe642;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.act_time .descripition {
+  color: #ffff;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 11.5px;
+  line-height: 13px;
+  margin-right: 70px;
+  margin-top: 10px;
+}
+.act_calories {
+  width: 166px;
+  margin-top: 20px;
+  height: 98px;
+  background: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+  border-radius: 20px;
+}
+.act_calories .calories {
+  color: #fb1351;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-right: 50px;
+}
+.act_calories .descripition {
+  color: #ffff;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 11.5px;
+  line-height: 13px;
+  margin-top: 10px;
+}
+.main_image {
+  left: 429px;
+  position: absolute;
+  object-fit: cover;
+  width: 600px;
+  height: 600px;
+  margin-top: 70px;
+  margin-left: 100px;
+}
+.content_exercicies {
+  display: flex;
+  color: #ffff;
+  margin-left: 50px;
+  margin-top: 150px;
+  margin-right: 100px;
+  flex-wrap: wrap;
+}
+.inf {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.inf .tittle {
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: 0.3px;
+}
+.inf .subtittle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.47;
+  text-transform: uppercase;
+}
+.types_exercicies {
+  height: 130vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  width: 373px;
+  margin-top: 50px;
+  height: 250px;
+  position: relative;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.types_exercicies .card:nth-child(-n + 3) {
+  margin-bottom: -120px;
+}
+.background-img {
+  border-radius: 10px;
+}
+.name {
+  width: 265px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.3px;
+  position: absolute;
+  left: 5%;
+  bottom: -7%;
+}
+.card .time {
+  position: absolute;
+  width: 75px;
+  height: 40px;
+  background-color: #000000;
+  color: #ffff;
+  left: 310px;
+  bottom: -20px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  letter-spacing: 1.3px;
+}
+.gastocalorico {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  opacity: 0.67;
+  bottom: -55px;
+  left: 30px;
+}
+.card .gradient {
+  position: absolute;
+  background-image: linear-gradient(to top, #000, transparent);
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to top, #000, transparent);
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+}
+
+.content_trainers {
+  background-color: #000;
+  position: relative;
+  padding: 0 50px;
+  padding-top: 100px;
+}
+.content_descripition {
+  position: absolute;
+  background-color: #191919;
+  width: 944px;
+  height: 690px;
+  top: 0;
+  right: 0;
+}
+.section-1 {
+  display: flex;
+  position: relative;
+  gap: 100px;
+}
+.section-1 .detail_amarelo {
+  width: 450px;
+  height: 140px;
+  position: absolute;
+  bottom: -40px;
+  transform: rotate(-5deg);
+}
+.section-1 .tittle {
+  font-size: 110px;
+  letter-spacing: -2px;
+  font-weight: 600;
+  color: #fff;
+  top: 0;
+  position: relative;
+}
+.section-1 .depoiment {
+  color: #fff;
+  font-size: 25px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  margin-bottom: 50px;
+  opacity: 0.7;
+}
+.section-1 .btn_get2 {
+  background-color: #25ab75;
+  color: #fff;
+  border: none;
+  padding: 24px 43px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.trainers {
+  position: relative;
+  display: flex;
+  height: 919px;
+}
+.t-cardTreiner {
+  color: #fff;
+}
+.t-cardTreiner.william {
+  width: 360px;
+  margin-top: 150px;
+}
+.t-cardTreiner.karen {
+  width: 360px;
+  align-self: flex-end;
+  margin-bottom: 27px;
+}
+.t-cardTreiner.jonathan {
+  flex-grow: 1;
+}
+.t-cardTreiner.jonathan .t-name,
+.t-cardTreiner.jonathan .t-subtitle {
+  margin-left: 20px;
+}
+.t-cardTreiner .t-image {
+  width: 100%;
+}
+.t-cardTreiner .t-name {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+.t-cardTreiner .t-subtitle {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.content_fotter {
+  padding: 0 50px;
+  display: flex;
+  margin-top: 100px;
+}
+.playlists {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.play-item {
+  display: flex;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.5px solid #666666;
+  transition: 0.3s;
+}
+.play-item:hover {
+  transform: scale(1.035);
+}
+.order {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  color: #fff;
+  opacity: 0.34;
+  align-self: center;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.play-item .wrap {
+  flex-grow: 1;
+  padding: 0 0 0 30%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.type {
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 20px;
+  color: #ffff;
+  letter-spacing: 0.84px;
+}
+.amount {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 0.5;
+  align-self: flex-start;
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.arrow {
+  display: inline-block;
+  margin-bottom: 50px;
+}
